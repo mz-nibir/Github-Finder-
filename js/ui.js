@@ -39,6 +39,8 @@ class UI{
     }
     showAlert(msg,className){
 
+
+        this.clearAlert(); //self function k call korte this use hoy
         
         let div= document.createElement('div');
         div.className= className;
@@ -47,6 +49,13 @@ class UI{
         let container = document.querySelector(".searchContainer");
         let search = document.querySelector('.search');
         container.insertBefore(div,search); //div k add korbo search er age
+
+    }
+    clearAlert(){ //ager Alert k remove kore
+        let currentAlert = document.querySelector('.alert');
+        if(currentAlert){
+            currentAlert.remove();
+        }
 
     }
 }
