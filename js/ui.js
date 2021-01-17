@@ -43,6 +43,7 @@ class UI{
 
 
         this.clearAlert(); //self function k call korte this use hoy
+        this.clearProfile(); //akbar profile view kore jodi alert ase tahole ager view show theke alert dey. tai clearprofile call korle thik hobe
         
         let div= document.createElement('div');
         div.className= className;
