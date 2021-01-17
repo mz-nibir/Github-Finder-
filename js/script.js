@@ -10,11 +10,22 @@ searchBtn.addEventListener('click', (e) => {
         fetch(`https://api.github.com/users/${userText}`)
         .then(result => result.json())
         .then(data => {
-            console.log(data);
+           // console.log(data);
+
+           if(data.message == 'Not Found'){
+               //show alert
+           }
+           else{
+
+            //show profile
+           }
 
 
         })
 
+    }else{
+        //clear profile
+        
     }
 
 
