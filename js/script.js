@@ -19,6 +19,7 @@ searchBtn.addEventListener('click', (e) => {
            else{
 
             //show profile
+            ui.showProfile(data);
            }
 
 
