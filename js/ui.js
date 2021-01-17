@@ -37,4 +37,16 @@ class UI{
         
 
     }
+    showAlert(msg,className){
+
+        
+        let div= document.createElement('div');
+        div.className= className;
+        div.appendChild(document.createTextNode(msg));
+
+        let container = document.querySelector(".searchContainer");
+        let search = document.querySelector('.search');
+        container.insertBefore(div,search); //div k add korbo search er age
+
+    }
 }
