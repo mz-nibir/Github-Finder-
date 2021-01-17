@@ -27,6 +27,14 @@ class UI{
             </div>
             </div>
             `;
+            
+
+
+
+    }
+    clearProfile(){
+         this.profile.innerHTML= "";
+        
 
     }
 }
